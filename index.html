@@ -555,8 +555,10 @@ a.buttons:not(:last-child):nth-last-child(4) {
                                                         })
                                                         
                                                         btnAdd.onclick = function() {
-                                                          const newItem = document.createElement('li')
-                                                          newItem.textContent = newTask.value
+
+                                                          const newItem = document.createElement('li');
+                                                          newItem.textContent = newTask.value;
+                                                          newTask.value = "";
                                                           newItem.classList.add("list-group-item", "list-group-item-action") ;
                                                           
                                                           taskList.prepend(newItem)
@@ -617,9 +619,9 @@ a.buttons:not(:last-child):nth-last-child(4) {
                                                 
                                                 <!-- 
                                                   flipkart ad script -->
-                                                  <div data-WRID="WRID-147611628585881879" data-widgetType="staticBanner" data-responsive="yes"
+                                                  <center><div data-WRID="WRID-147611628585881879" data-widgetType="staticBanner" data-responsive="yes"
                                                   data-class="affiliateAdsByFlipkart" height="250" width="300"></div>
-                                                  <script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
+                                                  <script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script></center>
                                                   
                                                   <!-- 
                                                     amazon ad script -->
