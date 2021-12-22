@@ -11,6 +11,11 @@
     
     gtag('config', 'UA-175509327-1');
   </script>
+      <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/service-worker.js');
+        }
+    </script>
   <link rel="apple-touch-icon" type="image/png"
   href="https://icons-for-free.com/iconfiles/png/512/cart+checked+ecommerce+online+shopping+shopping+cart+icon-1320165952137863404.png" />
 <meta name="apple-mobile-web-app-title" content="CodePen">
@@ -42,6 +47,7 @@
   <script src="/script.js"></script>
     
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
 
 </head>
 
@@ -53,9 +59,9 @@
         <div class="col-12">
           <nav class="navbar navbar-expand-md navbar-light">
             
-            <a target="__blank" href="https://amzamani.github.io">
+            <a target="__blank" href="https://toffeemoney.com">
               <img
-              src="/15168465-30E5-41B0-9236-AD8D522DAD73.png"
+              src="/logo1.jpg"
               width="35" height="35" class="d-inline-block align-top" alt="amzamani.github.io"></a>
               
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
